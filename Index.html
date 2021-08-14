@@ -11,42 +11,40 @@
     <title>Website Design</title>
   </head>
   <body>
+
+    <div class="container-fluid">
     <h1 class="text-success">Khulna Medical College & University</h1>
-
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
-    -->
-
-    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+    <div class="col-auto">
+      <button type="Sign In" class="btn btn-primary mb-3">Sign In <Input:b></Input:b></button>
+    </div>
+    <div class="d-grid gap-2 d-md-block">
+      <button class="text-muted" type="button"><h1>My Portfolio</h1></button>
+    </div>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">Home</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="#">About Us</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="#">Information</a>
               </li>
               <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
+                  Contruct Us
                 </a>
                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Admissions</a></li>
+                  <li><a class="dropdown-item" href="#">Training</a></li>
                   <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                  <li><a class="dropdown-item" href="#">Blog</a></li>
                 </ul>
               </li>
               <li class="nav-item">
@@ -61,35 +59,38 @@
         </div>
       </nav>
 
-      <!--end nevbar-->
-      <!--start slider-->
-      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+      <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="https://ssl.du.ac.bd/fontView/images/slider/16229812595c68187b-e769-4ce0-af61-c787c4c0687e.jpg" class="d-block w-100" alt="...">
+            <img src="Images/medicine_slider_v1-380jl386kq9nxrhjegt0jk.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="http://www.colegiodepadua.com.br/img/slider/slider_image_4.jpg" class="d-block w-100" alt="...">
+            <img src="Images/slider-2.png" class="d-block w-100" alt="...">
           </div>
           <div class="carousel-item">
-            <img src="https://mevex.com/wp-content/uploads/medical-devices.jpg" class="d-block w-100" alt="...">
+            <img src="Images/slider-3-1170x550.jpg" class="d-block w-100" alt="...">
           </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
       </div>
-      <!--end slider-->
-
+      <br>
+      <h1 class="bg-primary">Welcome To Khulna Medical College & University</h1>
       <!--start card-->
       <div class="card-group">
         <div class="card">
-          <img src="https://lh3.googleusercontent.com/proxy/FwLSpo0fphqyFwZGbYDalyVwGPnQNRqOFDbsRqjmOgXhLVQlEl3MEmWvFOL41f-4a6wyfXgY78aCZmWSle4c0gZA9hc6WrNHVhUOKg" class="card-img-top" alt="...">
+          <img src="Images/slider-4.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
@@ -99,7 +100,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://www.gmc.edu.bd/slider/Slider%20(08).jpg" class="card-img-top" alt="...">
+          <img src="Images/slider001.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
@@ -109,7 +110,7 @@
           </div>
         </div>
         <div class="card">
-          <img src="https://gombbs.in/wp-content/uploads/2020/05/ewa.jpg" class="card-img-top" alt="...">
+          <img src="Images/slider4.png" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Card title</h5>
             <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
@@ -170,6 +171,7 @@
         </section>
         <!--end Footer-->
         <br>
+        <div class="container-fluid">
 
         <form class="row g-3">
           <div class="col-auto">
@@ -180,9 +182,55 @@
             <label for="inputPassword2" class="visually-hidden">Password</label>
             <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
           </div>
-          <div class="col-auto">
-            <button type="submit" class="btn btn-primary mb-3">Submit</button>
-          </div>
+          
+        </div>
         </form>
+        <div class="container-fluid">
+        <form class="row g-3">
+          <div class="col-md-6">
+            <label for="inputEmail4" class="form-label">Email</label>
+            <input type="email" class="form-control" id="inputEmail4">
+          </div>
+          <div class="col-md-6">
+            <label for="inputPassword4" class="form-label">Password</label>
+            <input type="password" class="form-control" id="inputPassword4">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress" class="form-label">Address</label>
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="col-12">
+            <label for="inputAddress2" class="form-label">Address 2</label>
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="col-md-6">
+            <label for="inputCity" class="form-label">City</label>
+            <input type="text" class="form-control" id="inputCity">
+          </div>
+          <div class="col-md-4">
+            <label for="inputState" class="form-label">State</label>
+            <select id="inputState" class="form-select">
+              <option selected>Choose...</option>
+              <option>...</option>
+            </select>
+          </div>
+          <div class="col-md-2">
+            <label for="inputZip" class="form-label">Zip</label>
+            <input type="text" class="form-control" id="inputZip">
+          </div>
+          <div class="col-12">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+        </form>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
   </body>
 </html>
